@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Enrollment Form</title>
+
+    <style>
+        li {
+            font-size: 18px;
+        }
+        table{
+            border-collapse: collapse;
+            margin: auto;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.15);
+        }
+        thead tr {
+            background-color: bisque;
+            text-align: left;
+            margin: auto;
+        }
+        th, td{
+            padding: 12px 15px;
+            margin: auto;
+        }
+        tbody tr {
+            border-bottom: 1px solid #dddd;
+            margin: auto;
+        }
+        tbody tr:nth-of-type(even) {
+            background-color: rgb(255, 248, 239);
+            margin: auto;
+        }
+        tbody tr:last-of-type {
+            border-bottom: 2px solid bisque;
+            margin: auto;
+        }
+        input[type=text], input[type=number] {
+            width: 300px;
+            margin: auto;
+            border: none;
+            border-bottom: 2px solid black    ;
+            background-color: bisque;
+            font-size: 16px;
+        }
+        input[type = submit]{
+            margin: auto;
+            text-align: center;
+            padding: 10px;
+            font-size: 25px;
+            background-color: blanchedalmond;
+            cursor: pointer;
+            display: inline-block;
+            opacity: 0.7;
+            transition: 0.3s;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        input[type = submit]:hover {opacity: 1}
+        select, input[type = checkbox], input[type = radio]{
+            font-size: 16px;
+            margin: auto;
+            cursor: pointer;
+        }
+        label {
+            font-size: 20px
+        }
+        
+    </style>
+</head>
+
+<body style="background-color: whitesmoke;">
+    <h1  style="text-align: center; background-color: bisque; position: relative;">Student Enrollment Form</h1>
+    <h3>Instructions:</h3>
+    <ol>
+        <li>Fill in the form fields.</li>
+        <li>Check your interests.</li>
+        <li>Click "Enroll Now" to submit.</li>
+    </ol>
+    <fieldset style = "width:max-content; height:max-content; margin: auto; ">
+        <legend>Form</legend>
+        <form style="background-color: bisque; padding-left: 20px; padding-top: 10px;margin: auto; ">
+            <h3>Please fill every field</h3>
+            <label for = "name">Full name:</label><br>
+            <input type = "text" id = "name" name = "name"><br>
+            <label for = "email">Email Address:</label><br>
+            <input type = "text" id = "email" name = "email"><br>
+            <label for = "age">Age:</label><br>
+            <input type = "number" id = "age" name = "age"><br><br>
+            
+            <label for = "sex">Sex:</label><br>
+            <input type = "radio" id = "female" name = "sex" value="female">
+            <label for = "female">Female</label><br>
+            <input type = "radio" id = "male" name = "sex" value="male">
+            <label for = "male">Male</label><br><br>
+
+            <label for = "course">Select your course:</label><br>
+            <select name = "course" id = "course">
+                <option value = "ABELS">ABELS</option>
+                <option value = "BSA">BSA</option>
+                <option value = "BSAIS">BSAIS</option>
+                <option value = "BSIT">BSIT</option>
+                <option value = "BSPA">BSPA</option>
+                <option value = "BSSW">BSSW</option>
+                <option value = "BTVTED">BTVTED</option>
+                <option value = "DHRS">DHRS</option>
+            </select><br><br>
+
+            <label for = interest1>Select the field your interested:</label><br>
+            <input type="checkbox" id="interest1" name="interest1" value="Web Development">
+            <label for="interest1">Web Development</label><br>
+            <input type="checkbox" id="interest2" name="interest2" value="Data Science">
+            <label for="interest2">Data Science</label><br>
+            <input type="checkbox" id="interest3" name="interest3" value="Networking">
+            <label for="interest3">Networking</label><br>
+            <input type="checkbox" id="interest4" name="interest4" value="Graphic Design">
+            <label for="interest4">Graphic Design</label><br><br>
+
+            <input type = "submit" value = "Enroll Now"><br><br><br>
+        </form>
+    </fieldset><br><br>
+    <h2 style = "text-align: center; background-color: bisque; margin: auto;">Student Information</h2><br>
+    <table>
+        <tr style = "background-color: bisque;">
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Age</th>
+            <th>Sex</th>
+            <th>Course</th>
+            <th>Interest</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Jeanne Nicole Gianan</td>
+            <td>gianan1234@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Studying</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Angelica Nicole Castillo</td>
+            <td>castillo1234@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Cats</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Joanne Juanane</td>
+            <td>juanane1234@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>music</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Sharle Mae Habito</td>
+            <td>habito1234@gmail.com</td>
+            <td>19</td>
+            <td>Female</td>
+            <td>BSIT</td>
+            <td>Scenery</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Patrick Laurence Lagaya</td>
+            <td>lagaya1234@gmail.com</td>
+            <td>20</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Love</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>John Oliver Liwanag</td>
+            <td>liwanag1234@gmail.com</td>
+            <td>19</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Games</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Aaron Faderagao</td>
+            <td>faderagao1234@gmail.com</td>
+            <td>19</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Cats</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Joshua Denado</td>
+            <td>denado1234@gmail.com</td>
+            <td>19</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Games</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Prince Agustines</td>
+            <td>agustines1234@gmail.com</td>
+            <td>19</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Cats</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Avian Cayle Inciong</td>
+            <td>inciong1234@gmail.com</td>
+            <td>21</td>
+            <td>Male</td>
+            <td>BSIT</td>
+            <td>Love</td>
+        </tr>
+    </table>
+</body>
+</html>
